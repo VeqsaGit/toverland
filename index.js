@@ -2,7 +2,7 @@ const axios = require('axios');
 const jsdom = require('jsdom');
 const {JSDOM} = jsdom;
 
-function queue() {
+async function queue() {
     const html = await axios.get('https://www.looopings.nl/wachten/toverland');
     const dom = new JSDOM(html.data);
 

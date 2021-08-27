@@ -24,4 +24,4 @@ async function queue() {
     return toverlandtemp
 }
 
-module.exports.toverland = queue;
+module.exports.queue = queue;

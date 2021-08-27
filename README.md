@@ -19,6 +19,7 @@ How to use the toverland package
 const toverland = require('toverland')
 ```
 ```javascript
-let queues = toverland.queue()
-console.log(queues)
+toverland.queue().then(function(result) {
+    console.log(result); // Returns javascript object
+})
 ```

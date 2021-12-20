@@ -20,6 +20,7 @@ const toverland = require('toverland')
 ```
 ```javascript
 toverland.queue().then(function(result) {
-    console.log(result); // Returns javascript object
+    console.log(result);
+	// containing: Time and Status object for each coaster
 })
 ```

@@ -1,6 +1,6 @@
 {
   "name": "toverland",
-  "version": "1.1.9",
+  "version": "1.2.6",
   "description": "See the current queues in themepark toverland",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/VeqsaGit/toverland/issues"
   },
-  "homepage": "https://github.com/VeqsaGit/toverland#readme"
+  "homepage": "https://github.com/VeqsaGit/toverland#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "jsdom": "^17.0.0"
+  }
 }

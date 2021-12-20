@@ -1,6 +1,6 @@
 {
   "name": "toverland",
-  "version": "1.2.6",
+  "version": "2.2.6",
   "description": "See the current queues in themepark toverland",
   "main": "index.js",
   "scripts": {

@@ -2,7 +2,6 @@ const axios = require('axios');
 const jsdom = require('jsdom');
 const {JSDOM} = jsdom;
 
-
 async function queue() {
     const html = await axios.get('https://www.looopings.nl/wachten/toverland');
     const dom = new JSDOM(html.data);
@@ -13,8 +12,10 @@ async function queue() {
 
     for (let i = 0; i < x.length; i++) { 
 
+		let time = dom.window.document.getElementsByClassName('waittime')[i]?.innerHTML
+
         let waittime = {
-			"time":dom.window.document.getElementsByClassName('waittime')[i]?.innerHTML,
+			"time":(/^\d+$/.test(time)) ? parseInt(time) : null,
 			"status":dom.window.document.getElementsByClassName('state state')[i]?.innerHTML
 		}
 
